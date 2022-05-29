@@ -75,7 +75,7 @@ Console.WriteLine("/***********************/");
 #endregion
 
 //can add aditional behavior to an object 
-#region Memento Pattern
+#region Decoratore Pattern
 Console.WriteLine("/***Decoratore Pattern***/");
 var clds = new CloudStream();
 clds.write("asd");
