@@ -1,11 +1,7 @@
-﻿using DesignPatterns.AdapterPattern.avaFilters;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using DesignPatterns.AdapterPattern.Solution.avaFilters;
 
-namespace DesignPatterns.AdapterPattern
+namespace DesignPatterns.AdapterPattern.Solution
 {
     public class CaramelFilter : Caramel,IFilter
     {

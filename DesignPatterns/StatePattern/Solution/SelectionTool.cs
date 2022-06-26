@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.StatePattern
+namespace DesignPatterns.StatePattern.Solution
 {
-    public class BrushTool : ITool
+    public class SelectionTool : ITool
     {
         public void mouseDown()
         {
-            Console.WriteLine("Brush icon");
+            Console.WriteLine("Selection icon");
         }
 
         public void mouseUp()
         {
-            Console.WriteLine("Draw a line");
+            Console.WriteLine("Draw a dashed rectangle");
         }
     }
 }

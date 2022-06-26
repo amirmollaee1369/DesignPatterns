@@ -4,21 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.DecoratorePattern
+namespace DesignPatterns.DecoratorePattern.Problem
 {
-    public class CompressedCloudStream : IStream
+    public class CompressedCloudStream : CloudStream
     {
-        private IStream stream;
-        public CompressedCloudStream(IStream stream)
-        {
-            this.stream = stream;
-        }
-
-        public void write(string data)
+        public override void write(string data)
         {
             var compressedData = compresseData(data);
 
-            stream.write(compressedData); 
+            base.write(compressedData); 
         }
 
         private string compresseData(string data)

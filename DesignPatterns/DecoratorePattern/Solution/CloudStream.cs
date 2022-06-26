@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.DecoratorePattern
+namespace DesignPatterns.DecoratorePattern.Solution
 {
     public class CloudStream : IStream
     {

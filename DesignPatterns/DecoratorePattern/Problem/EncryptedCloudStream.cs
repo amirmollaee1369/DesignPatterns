@@ -4,21 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.DecoratorePattern
+namespace DesignPatterns.DecoratorePattern.Problem
 {
-    public class EncryptedCloudStream : IStream
+    public class EncryptedCloudStream : CloudStream
     {
-        private IStream stream;
-        public EncryptedCloudStream(IStream stream)
-        {
-           this.stream = stream;
-        }
-
-        public void write(string data)
+        public override void write(string data)
         {
             var encrypted = encrypteData(data);
 
-            stream.write(encrypted); 
+            base.write(encrypted); 
         }
 
         private string encrypteData(string data)

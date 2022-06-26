@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.StatePattern
+namespace DesignPatterns.AdapterPattern.Problem
 {
-    public interface ITool
+    public interface IFilter
     {
-        void mouseDown();
-        void mouseUp();
+        void apply(Image image);
     }
 }

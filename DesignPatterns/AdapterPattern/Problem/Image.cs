@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.AdapterPattern
+namespace DesignPatterns.AdapterPattern.Problem
 {
-    public interface IFilter
+    public class Image
     {
-        void apply(Image image);
     }
 }

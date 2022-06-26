@@ -13,6 +13,11 @@ using DesignPatterns.TemplatePattern.Solution;
 using DesignPatterns.CommandPattern;
 using DesignPatterns.CommandPattern.fx;
 using DesignPatterns.ProxyPattern;
+using DesignPatterns.AdapterPattern.Solution;
+using DesignPatterns.DecoratorePattern.Solution;
+using DesignPatterns.MementoPattern.Solution;
+using DesignPatterns.StatePattern.Problem;
+
 
 //use for Grouped class
 #region Composite Pattern
@@ -46,6 +51,11 @@ ITaxCalculatore taxCalculatore2020 = new TaxCalculatore2020();
 //use for create adapter to convert class
 #region Adapter Pattern
 Console.WriteLine("/***Adapter Pattern***/");
+//--------------------------------------Problem :
+//var imageView = new ImageView(new Image());
+//imageView.apply(new VivedFilter());
+//--------------------------------------
+//--------------------------------------solve : 
 var imageView = new ImageView(new Image());
 imageView.apply(new VivedFilter());
 imageView.apply(new CaramelFilter());
@@ -55,6 +65,13 @@ Console.WriteLine("/***********************/");
 //use for implement undo mechanism
 #region Memento Pattern
 Console.WriteLine("/***Memento Pattern***/");
+//--------------------------------------Problem :
+//var editor = new Editor();
+//editor.content = "a";
+//editor.content = "b";
+//editor.content = "c";//How can implement undo? we can use Memento Pattern
+//--------------------------------------
+//--------------------------------------solve : 
 var editor = new Editor();
 var history = new History();
 editor.content = "a";
@@ -77,6 +94,15 @@ Console.WriteLine("/***********************/");
 //can add aditional behavior to an object 
 #region Decoratore Pattern
 Console.WriteLine("/***Decoratore Pattern***/");
+//--------------------------------------Problem :
+//var clds = new CloudStream();
+//clds.write("asd");
+//var ccs = new CompressedCloudStream();
+//ccs.write("asd");
+//var ecs = new EncryptedCloudStream();
+//ecs.write("asd");
+//--------------------------------------
+//--------------------------------------solve : 
 var clds = new CloudStream();
 clds.write("asd");
 var ecs = new EncryptedCloudStream(new CloudStream());
@@ -87,9 +113,16 @@ Console.WriteLine("/***********************/");
 //can add aditional behavior to an object 
 #region State Pattern
 Console.WriteLine("/***State Pattern***/");
-var canvas = new Canvas(new BrushTool());
+//--------------------------------------Problem :
+var canvas = new Canvas();
+canvas.currentTool = ToolType.SELECTION;
 canvas.mouseDown();
 canvas.mouseUp();
+//--------------------------------------
+//--------------------------------------solve : 
+//var canvas = new Canvas(new BrushTool());
+//canvas.mouseDown();
+//canvas.mouseUp();
 Console.WriteLine("/***********************/");
 #endregion
 

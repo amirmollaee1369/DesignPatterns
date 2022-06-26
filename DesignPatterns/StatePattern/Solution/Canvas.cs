@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.StatePattern
+namespace DesignPatterns.StatePattern.Solution
 {
     public class Canvas
     {

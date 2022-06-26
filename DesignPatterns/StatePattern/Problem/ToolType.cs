@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.DecoratorePattern
+namespace DesignPatterns.StatePattern.Problem
 {
-    public interface IStream
+    public enum ToolType
     {
-        public void write(string data);
+        SELECTION,
+        BRUSH,
+        ERASER
     }
 }
