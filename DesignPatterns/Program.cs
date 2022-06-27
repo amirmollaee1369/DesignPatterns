@@ -17,6 +17,8 @@ using DesignPatterns.AdapterPattern.Solution;
 using DesignPatterns.DecoratorePattern.Solution;
 using DesignPatterns.MementoPattern.Solution;
 using DesignPatterns.StatePattern.Problem;
+using DesignPatterns.FacadePattern.Solution;
+using DesignPatterns.FlyWeightPattern.Solution;
 
 
 //use for Grouped class
@@ -174,14 +176,18 @@ Console.WriteLine("/***********************/");
 Console.WriteLine("/***FlyWeight Pattern***/");
 //--------------------------------------Problem : alot memory application uses (int:4b,array:20kb,...)
 //var pointService = new PointService();
+//foreach (var point in pointService.getPoints())
+//{
+//    point.draw();
+//}
 //--------------------------------------
 //--------------------------------------solve : just one place uses to store point
 var pointService = new PointService(new PointIconFactory());
-//--------------------------------------
 foreach (var point in pointService.getPoints())
 {
     point.draw();
 }
+//--------------------------------------
 Console.WriteLine("/***********************/");
 #endregion
 

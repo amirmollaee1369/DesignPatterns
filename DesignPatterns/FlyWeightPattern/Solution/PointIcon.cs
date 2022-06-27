@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.FlyWeightPattern
+namespace DesignPatterns.FlyWeightPattern.Solution
 {
     public class PointIcon
     {
