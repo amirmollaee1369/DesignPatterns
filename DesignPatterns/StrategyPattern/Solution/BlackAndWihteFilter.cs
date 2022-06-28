@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.StrategyPattern
+namespace DesignPatterns.StrategyPattern.Solution
 {
-    public class High_Contrast : IFilter
+    public class BlackAndWihteFilter : IFilter
     {
         public void apply(string fileName)
         {
-            Console.WriteLine("Applying high-contrast filter");
+            Console.WriteLine("Applying B&W filter");
         }
     }
 }

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.StrategyPattern
+namespace DesignPatterns.StrategyPattern.Solution
 {
-    public interface IFilter
+    public interface ICompressor
     {
-        void apply(string fileName);
+        void compress(string fileName);
     }
 }

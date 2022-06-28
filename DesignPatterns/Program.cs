@@ -19,6 +19,7 @@ using DesignPatterns.MementoPattern.Solution;
 using DesignPatterns.StatePattern.Problem;
 using DesignPatterns.FacadePattern.Solution;
 using DesignPatterns.FlyWeightPattern.Solution;
+using DesignPatterns.StrategyPattern.Solution;
 
 
 //use for Grouped class
@@ -195,13 +196,15 @@ Console.WriteLine("/***********************/");
  #region Strategy Pattern
 Console.WriteLine("/***Strategy Pattern***/");
 //--------------------------------------Problem : if i make a class for storing file and compress and filter , single responcibility not correct
+//var imageStorage = new ImageStorage("jpeg","b&w");
+//imageStorage.store("index");
 //--------------------------------------
 //--------------------------------------solve : 
 var imageStorage = new ImageStorage(
     new PNGCompressor(),
     new BlackAndWihteFilter()
     );
-imageStorage.store("index.exe");
+imageStorage.store("index");
 //--------------------------------------
 Console.WriteLine("/***********************/");
 #endregion
