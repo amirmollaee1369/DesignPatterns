@@ -20,6 +20,7 @@ using DesignPatterns.StatePattern.Problem;
 using DesignPatterns.FacadePattern.Solution;
 using DesignPatterns.FlyWeightPattern.Solution;
 using DesignPatterns.StrategyPattern.Solution;
+using DesignPatterns.Observer.Solution;
 
 
 //use for Grouped class
@@ -278,7 +279,7 @@ Console.WriteLine(document.content);
 Console.WriteLine("/***********************/");
 #endregion
 
-//
+//Lazy Loading
 #region Proxy Pattern
 Console.WriteLine("/***Proxy Pattern***/");
 //--------------------------------------Problem :
@@ -302,6 +303,23 @@ foreach (var fileName in fileNames)
 
 library.openEbook("a");
 library.openEbook("b");
+//--------------------------------------
+Console.WriteLine("/***********************/");
+#endregion
+
+#region Observer Pattern
+Console.WriteLine("/***Observer Pattern***/");
+//--------------------------------------Problem :
+//--------------------------------------
+//--------------------------------------solve : 
+var dataSource = new DataSource();
+var spreadSheet1 = new SpreadSheet();
+var spreadSheet2 = new SpreadSheet();
+var chart=new Chart();
+
+dataSource.addObserver(spreadSheet1);
+dataSource.addObserver(spreadSheet2);
+dataSource.addObserver(chart);
 //--------------------------------------
 Console.WriteLine("/***********************/");
 #endregion
