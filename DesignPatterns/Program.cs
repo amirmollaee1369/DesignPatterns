@@ -320,6 +320,8 @@ var chart=new Chart();
 dataSource.addObserver(spreadSheet1);
 dataSource.addObserver(spreadSheet2);
 dataSource.addObserver(chart);
+
+dataSource.setValue(1);
 //--------------------------------------
 Console.WriteLine("/***********************/");
 #endregion
