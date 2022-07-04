@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.MediatorPattern.Problem
 {
-    public class UIControl
+    public class TextBox : UIControl
     {
+        public string content { get; set; }
     }
 }

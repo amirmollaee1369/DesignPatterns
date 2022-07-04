@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.MediatorPattern.Problem
 {
-    public class UIControl
+    public class ListBox : UIControl
     {
+        public string selection { get; set; }
     }
 }

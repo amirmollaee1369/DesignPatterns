@@ -21,6 +21,7 @@ using DesignPatterns.FacadePattern.Solution;
 using DesignPatterns.FlyWeightPattern.Solution;
 using DesignPatterns.StrategyPattern.Solution;
 using DesignPatterns.Observer.Solution;
+using DesignPatterns.MediatorPattern.Solution;
 
 
 //use for Grouped class
@@ -252,7 +253,7 @@ Console.WriteLine("/***Command Pattern***/");
 //Command Pattern
 var customerService = new CustomerService();
 var addCustomerCommand = new AddCustomerCommand(customerService);
-var button = new Button(addCustomerCommand);
+var button = new DesignPatterns.CommandPattern.fx.Button(addCustomerCommand);
 button.click();
 
 //Composite Command Pattern
@@ -322,6 +323,17 @@ dataSource.addObserver(spreadSheet2);
 dataSource.addObserver(chart);
 
 dataSource.setValue(1);
+//--------------------------------------
+Console.WriteLine("/***********************/");
+#endregion
+
+#region Mediator Pattern
+Console.WriteLine("/***Mediator Pattern***/");
+//--------------------------------------Problem :
+//--------------------------------------
+//--------------------------------------solve : 
+var dialog = new ArticleDialogBox();
+dialog.simulateUserInteraction();
 //--------------------------------------
 Console.WriteLine("/***********************/");
 #endregion
