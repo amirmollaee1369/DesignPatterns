@@ -1,19 +1,24 @@
 # All design pattern from gang of 4
 
-## 1.Composite Pattern
-## 2.Adapter Pattern
-## 3.Memento Pattern
-## 4.Decoratore Pattern
-## 5.State Pattern
-## 6.Facade Pattern
-## 7.Iterator Pattern
-## 8.FlyWeight Pattern
-## 9.Strategy Pattern
-## 10.Bridge Pattern
-## 11.Template Pattern
-## 12.Command Pattern
-## 13.Proxy Pattern
-## 14.Observer Pattern
-## 15.Mediator Pattern
-## 16.Chain of Responsibility Pattern
-## 17.Visitor Pattern
+## 1.Creational design patterns
+
+## 2.Structural design patterns
+### 2.1.Adapter Pattern
+### 2.2.Bridge Pattern
+### 2.3.Composite Pattern
+### 2.4.Decoratore Pattern
+### 2.5.Facade Pattern
+### 2.6.FlyWeight Pattern
+### 2.7.Proxy Pattern
+
+## 3.Behavioral design patterns
+### 3.1.Chain of Responsibility Pattern
+### 3.2.Command Pattern
+### 3.3.Iterator Pattern
+### 3.4.Mediator Pattern
+### 3.5.Memento Pattern
+### 3.6.Observer Pattern
+### 3.7.State Pattern
+### 3.8.Strategy Pattern
+### 3.9.Template Pattern
+### 3.10.Visitor Pattern
