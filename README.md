@@ -4,7 +4,7 @@
   are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation.
 ## 2.Structural design patterns
   are design patterns that ease the design by identifying a simple way to realize relationships between entities.
-  ### 2.1.Adapter Pattern
+  _### 2.1.Adapter Pattern
   ### 2.2.Bridge Pattern
   ### 2.3.Composite Pattern
   ### 2.4.Decoratore Pattern
