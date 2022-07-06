@@ -22,6 +22,7 @@ using DesignPatterns.FlyWeightPattern.Solution;
 using DesignPatterns.StrategyPattern.Solution;
 using DesignPatterns.Observer.Solution;
 using DesignPatterns.MediatorPattern.Solution;
+using DesignPatterns.ChainOfResponsibility.Solution;
 
 
 //use for Grouped class
@@ -334,6 +335,22 @@ Console.WriteLine("/***Mediator Pattern***/");
 //--------------------------------------solve : 
 var dialog = new ArticleDialogBox();
 dialog.simulateUserInteraction();
+//--------------------------------------
+Console.WriteLine("/***********************/");
+#endregion
+
+#region Chain Of Responsibility Pattern
+Console.WriteLine("/***Chain Of Responsibility Pattern***/");
+//--------------------------------------Problem :
+//--------------------------------------
+//--------------------------------------solve : 
+//Authenticate->Log->Compress
+var compressor = new Compressor(null);
+var logger=new Logger(compressor);
+var authenticator = new Authenticator(logger);
+
+var server=new WebServer(authenticator);
+server.handle(new HttpRequest("admin", "123"));
 //--------------------------------------
 Console.WriteLine("/***********************/");
 #endregion
