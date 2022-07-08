@@ -23,6 +23,8 @@ using DesignPatterns.StrategyPattern.Solution;
 using DesignPatterns.Observer.Solution;
 using DesignPatterns.MediatorPattern.Solution;
 using DesignPatterns.ChainOfResponsibility.Solution;
+using DesignPatterns.VisitorPattern.Solution;
+
 
 
 //use for Grouped class
@@ -351,6 +353,24 @@ var authenticator = new Authenticator(logger);
 
 var server=new WebServer(authenticator);
 server.handle(new HttpRequest("admin", "123"));
+//--------------------------------------
+Console.WriteLine("/***********************/");
+#endregion
+
+#region Visitor Pattern
+Console.WriteLine("/***Visitor Pattern***/");
+//--------------------------------------Problem :
+//var documents = new HtmlDocument();
+//documents.add(new HeadingNode());
+//documents.add(new AnchorNode());
+//documents.highlight();
+//--------------------------------------
+//--------------------------------------solve : 
+var documents = new HtmlDocument();
+documents.add(new HeadingNode());
+documents.add(new AnchorNode());
+documents.execute(new HighlightOpreation());
+documents.execute(new PlainTextOperation());
 //--------------------------------------
 Console.WriteLine("/***********************/");
 #endregion
