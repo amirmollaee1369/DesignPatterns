@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.BridgePattern.Solution
 {
-    public class AdvancedRemoteControlBP : RemoteControlBP
+    public class AdvancedRemoteControl : RemoteControl
     {
-        public AdvancedRemoteControlBP(IDevice device) : base(device)
+        public AdvancedRemoteControl(IDevice device) : base(device)
         {
         }
 

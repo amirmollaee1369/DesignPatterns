@@ -1,18 +1,8 @@
 ﻿using DesignPatterns.Essentials;
-using DesignPatterns.AdapterPattern;
-using DesignPatterns.MementoPattern;
-using DesignPatterns.DecoratorePattern;
-using DesignPatterns.StatePattern;
-using DesignPatterns.FacadePattern;
 using DesignPatterns.IteratorPattern;
-using DesignPatterns.FlyWeightPattern;
-using DesignPatterns.StrategyPattern;
 using DesignPatterns.BridgePattern.Solution;
-using DesignPatterns.BridgePattern.Problem;
 using DesignPatterns.TemplatePattern.Solution;
 using DesignPatterns.CommandPattern;
-using DesignPatterns.CommandPattern.fx;
-using DesignPatterns.ProxyPattern;
 using DesignPatterns.AdapterPattern.Solution;
 using DesignPatterns.DecoratorePattern.Solution;
 using DesignPatterns.MementoPattern.Solution;
@@ -218,13 +208,13 @@ Console.WriteLine("/***********************/");
 #region Bridge Pattern
 Console.WriteLine("/***Bridge Pattern***/");
 //--------------------------------------Problem : if i want to add another TV , i have to add two class(RemoteControl,AdvancedSonyRemoteControl)
-var sonyRemoteControl = new SonyRemoteControl();
-sonyRemoteControl.turnOn();
+//var sonyRemoteControl = new SonyRemoteControl();
+//sonyRemoteControl.turnOn();
 //--------------------------------------
 //--------------------------------------solve : 
-var remoteControl = new RemoteControlBP(new SonyDevice());
+var remoteControl = new RemoteControl(new SonyDevice());
 remoteControl.turnOff();
-var remoteControl2 = new RemoteControlBP(new SamsungDevice());
+var remoteControl2 = new RemoteControl(new SamsungDevice());
 remoteControl2.turnOff();
 //--------------------------------------
 Console.WriteLine("/***********************/");

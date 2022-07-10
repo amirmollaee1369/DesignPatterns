@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.BridgePattern.Solution
 {
-    public class RemoteControlBP
+    public class RemoteControl
     {
         public IDevice device;
 
-        public RemoteControlBP(IDevice device)
+        public RemoteControl(IDevice device)
         {
             this.device = device;
         }
